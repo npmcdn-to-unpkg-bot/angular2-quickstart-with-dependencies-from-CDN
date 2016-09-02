@@ -23,31 +23,31 @@ After trying out a lot of tools and toolchains with a lot of amazing features an
 
 ```
 index.html
-replace the src path to shim, zone, Reflect and SystemJS from /node_modules/... to https://npmcdn.com/...
+replace the src path to shim, zone, Reflect and SystemJS from /node_modules/... to https://unpkg.com/...
 
-<script src="https://npmcdn.com/core-js@^2.4.1/client/shim.min.js"></script>
-<script src="https://npmcdn.com/zone.js@0.6.12/dist/zone.js"></script>
-<script src="https://npmcdn.com/reflect-metadata@0.1.2/Reflect.js"></script>
-<script src="https://npmcdn.com/systemjs@0.19.35/dist/system.src.js"></script>
+<script src="https://unpkg.com/core-js@^2.4.1/client/shim.min.js"></script>
+<script src="https://unpkg.com/zone.js@0.6.12/dist/zone.js"></script>
+<script src="https://unpkg.com/reflect-metadata@0.1.2/Reflect.js"></script>
+<script src="https://unpkg.com/systemjs@0.19.35/dist/system.src.js"></script>
 ```
 
 ```
 systemjs.config.js
-make the dependencies load as bundle from https://npmcdn.com/ too.
-Instead of '@angular': 'node_modules/@angular' you have to name all modules from angular and give the https://npmcdn.com/... path
+make the dependencies load as bundle from https://unpkg.com/ too.
+Instead of '@angular': 'node_modules/@angular' you have to name all modules from angular and give the https://unpkg.com/... path
 
-'@angular/common': 'https://npmcdn.com/@angular/common@2.0.0-rc.5',
-'@angular/compiler': 'https://npmcdn.com/@angular/compiler@2.0.0-rc.5',
-'@angular/core': 'https://npmcdn.com/@angular/core@2.0.0-rc.5',
-'@angular/forms': 'https://npmcdn.com/@angular/forms@0.3.0',
-'@angular/http': 'https://npmcdn.com/@angular/http@2.0.0-rc.5',
-'@angular/platform-browser': 'https://npmcdn.com/@angular/platform-browser@2.0.0-rc.5',
-'@angular/platform-browser-dynamic': 'https://npmcdn.com/@angular/platform-browser-dynamic@2.0.0-rc.5',
-'@angular/router': 'https://npmcdn.com/@angular/router@3.0.0-rc.1',
-'@angular/router-deprecated': 'https://npmcdn.com/@angular/router-deprecated@2.0.0-rc.2',
-'@angular/upgrade': 'https://npmcdn.com/@angular/upgrade@2.0.0-rc.5',
+'@angular/common': 'https://unpkg.com/@angular/common@2.0.0-rc.5',
+'@angular/compiler': 'https://unpkg.com/@angular/compiler@2.0.0-rc.5',
+'@angular/core': 'https://unpkg.com/@angular/core@2.0.0-rc.5',
+'@angular/forms': 'https://unpkg.com/@angular/forms@0.3.0',
+'@angular/http': 'https://unpkg.com/@angular/http@2.0.0-rc.5',
+'@angular/platform-browser': 'https://unpkg.com/@angular/platform-browser@2.0.0-rc.5',
+'@angular/platform-browser-dynamic': 'https://unpkg.com/@angular/platform-browser-dynamic@2.0.0-rc.5',
+'@angular/router': 'https://unpkg.com/@angular/router@3.0.0-rc.1',
+'@angular/router-deprecated': 'https://unpkg.com/@angular/router-deprecated@2.0.0-rc.2',
+'@angular/upgrade': 'https://unpkg.com/@angular/upgrade@2.0.0-rc.5',
 'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6'
+'rxjs': 'https://unpkg.com/rxjs@5.0.0-beta.6'
 ```
 
 ```
